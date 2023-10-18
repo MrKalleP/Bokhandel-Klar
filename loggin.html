@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="style/loggin.css">
+	<title>Login Page</title>
+
+</head>
+
+<body>
+<header>
+	<div class="Logo">
+		<a href="index.html"><img src="assets/Logga2.png" alt="A red, white and pink image of 5 books connected by a computer mouse" width="70rem"></a>
+	</div>
+</header>
+
+	<div class="container" id="container">
+		<!-- Koden för "Skapa konto" fönster start  -->
+		<div class="form-container sign-up">
+			<form>
+				<h1>Skapa ditt konto</h1>
+				<div class="social-icons"> <!-- Iconen för "Skapa konto" -->
+					<a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#" class="icon"><i class="fa-brands fa-x"></i></a>
+				</div>
+				<span>eller använd ditt e-post/lösenord</span>
+				<input type="text" placeholder="Name" required>
+				<input type="email" placeholder="Email" required>
+				<input type="password" placeholder="Password" required>
+				<button>Registrera dig nu</button>
+			</form>
+		</div>
+		<!-- Koden för "Skapa konto" fönster start  -->
+
+		<!-- Koden för "logga in" fönster start  -->
+		<div class="form-container sign-in">
+			<form>
+				<h1>Logga In</h1>
+				<div class="social-icons"> <!-- Icon för "logga in" -->
+					<a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#" class="icon"><i class="fa-brands fa-x"></i></a>
+				</div>
+				<span>eller använd ditt e-post/lösenord</span>
+				<input type="email" placeholder="Email" required>
+				<input type="password" placeholder="Password" required>
+				<a href="#">Glömt lösenord?</a>
+				<button>Logga in</button>
+			</form>
+		</div>
+		<!-- Koden för "logga in" fönster slut  -->
+
+		<!-- Koden för "logga in" när men är i Skapa konto fönster start -->
+		<div class="toggle-container">
+			<div class="toggle">
+				<div class="toggle-panel toggle-left">
+					<h1>Välkommen tillbaka!</h1>
+					<p>Registrera dig med dina personliga uppgifter för att använda alla webbplatsens funktioner</p>
+					<button class="hidden" id="login">Logga in</button>
+				</div>
+				<div class="toggle-panel toggle-right">
+					<h1>Hej!</h1>
+					<p>Registrera dig med dina personliga uppgifter för att använda alla webbplatsens funktioner</p>
+					<button class="hidden" id="register">Registrera dig nu</button>
+				</div>
+			</div>
+		</div>
+		<!-- Koden för "logga in" när men är i Skapa konto fönster slut -->
+	</div>
+
+	<script src="style/loggin.js"></script>
+</body>
+
+</html>
